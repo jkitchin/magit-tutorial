@@ -36,3 +36,9 @@ In the magit-status window press "m", then "m" and select the branch to merge in
 
 * Checkout an older version of a file
 Use M-x magit-checkout-file select the branch, or enter a revision, and then choose a file.
+
+* Add a remote
+M-x magit-remote-add
+then enter an alias, and the url.
+
+* Push
