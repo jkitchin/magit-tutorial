@@ -105,8 +105,6 @@ From the magit-status on unpushed commits, you can also press "r" to get the reb
 
 "r w" allows you to reword the commit message.
 
-"r m" allows you "edit" the commit.
-
 
 * Create patches
 [[info:magit#Creating%20and%20sending%20patches][info:magit#Creating and sending patches]]
