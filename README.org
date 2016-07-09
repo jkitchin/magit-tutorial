@@ -24,6 +24,8 @@ In the magit-status window with some files that are staged, press "c", review th
 * See the log
 In the magit-status window press "l", review the options, and press "l" again.
 
+If you want to see only the commits that affected a file, in the magit-status window press "l" then "=f", enter the filename, and then press "l" again.
+
 * Checkout a branch
 In the magit-status window press "b".
 
