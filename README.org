@@ -101,6 +101,12 @@ Got to the log, select the commit and type "V" then "V".
 
 Open the log, select the oldest commit you want to rebase on then press "r" and then "i". Use M-p and M-n to move commits around. Press "s" on any commits you want to squash into the commit above it. C-c C-c will start the commands.
 
+From the magit-status on unpushed commits, you can also press "r" to get the rebase popup.
+
+"r w" allows you to reword the commit message.
+
+"r m" allows you "edit" the commit.
+
 
 * Create patches
 [[info:magit#Creating%20and%20sending%20patches][info:magit#Creating and sending patches]]
