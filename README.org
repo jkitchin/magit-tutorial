@@ -19,6 +19,8 @@ This will prompt you for a repo, which is either a url, or a path, and a path to
 help:magit-clone
 
 * Check the status of your repo
+[[info:magit#Status%20buffer][info:magit#Status buffer]]
+
 Run M-x magit-status to see the status of your repo.
 
 Press g in the window to refresh it.
@@ -38,12 +40,21 @@ You can unstage a file with "u"
 In the magit-status window with some files that are staged, press "c", review the options, and probably press "c" again. Enter a commit message and type "C-c C-c" to commit it, or "C-c C-k" to cancel it.
 
 * Diffs
+[[info:magit#Diffing][info:magit#Diffing]]
+
 From the magit-status window, with the cursor on some file, press "d" then "d"
 
 * See the log
+[[info:magit#Logging][info:magit#Logging]]
+
 In the magit-status window press "l", review the options, and press "l" again.
 
 If you want to see only the commits that affected a file, in the magit-status window press "l" then "=f", enter the filename, and then press "l" again.
+
+* tag a version
+[[info:magit#Tagging][info:magit#Tagging]]
+
+press "t" in the magit-status window. You can then create a tag, annotate it, delete tags, and prune them.
 
 * Push
 [[info:magit#Pushing][info:magit#Pushing]]
