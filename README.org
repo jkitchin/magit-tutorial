@@ -13,6 +13,8 @@ You can create a git repo with M-x magit-init
 
 Press g in the window to refresh it.
 
+press "n" (next) or "p" (previous) to navigate in this window.
+
 * Stage a file
 In the magit-status window, put your cursor on an unstaged file and press "s".
 
@@ -45,4 +47,4 @@ then enter an alias, and the url.
 In the magit-status window press "P" then "p".
 
 * Pull
-In the magit-status window press "F" then "p".
+In the magit-status window press "f" then "p".
