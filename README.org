@@ -26,7 +26,7 @@ help:magit-clone
 
 Run M-x magit-status to see the status of your repo.
 
-Press g in the window to refresh it.
+Press "g" in the window to refresh it.
 
 press "n" (next) or "p" (previous) to navigate in this window.
 
@@ -51,7 +51,7 @@ In the magit-status window with some files that are staged, press "c", review th
 * Diffs
 [[info:magit#Diffing][info:magit#Diffing]]
 
-From the magit-status window, with the cursor on some file, press "d" then "d"
+From the magit-status window, press "d" then "d" to see what has changed.
 
 * See the log
 [[info:magit#Logging][info:magit#Logging]]
@@ -71,8 +71,15 @@ Note that tags don't normally get pushed, but there are options ("T" to push a t
 [[info:magit#Pulling][info:magit#Pulling]]
 In the magit-status window press "F" then "p".
 
+* Run a command-line git command manually
+[[info:magit#Running%20Git%20manually][info:magit#Running Git manually]]
+In the magit-status window, type "!" to get the popup and choose what you want to do (e.g. where to run the command, etc... You do not need to type "git" in the command. Note you can also run a shell command from this interface.
 
+* Check the output of the git command
+Press "$"
 * Intermediate concepts
+
+** Git blame
 
 ** Checkout an older version of a file
  Use M-x magit-checkout-file select the branch, or enter a revision, and then choose a file.
@@ -113,7 +120,6 @@ In the magit-status window press "f".
 
 Press "z" in the magit-status window
 
-
 * Advanced concepts
 ** Resetting
 [[info:magit#Resetting][info:magit#Resetting]]
@@ -133,10 +139,15 @@ Press "z" in the magit-status window
  In magit-status window, press "W"
 
  "W p" creates patches
- "W r" makes a pull request. This just creates an email with information in it.
+ "W r" makes a pull request. This just creates an email with information in it. It is not a GitHUB request, and it is only useful if there is a public, external copy of the repo.
+** Cherry-picking 
+[[info:magit#Cherry%20picking][info:magit#Cherry picking]]
+
+Press "A"
 
 ** Apply patches
  [[info:magit#Applying%20patches][info:magit#Applying patches]]
+
 ** Notes about commits
  [[info:magit#Notes][info:magit#Notes]]
 
@@ -148,5 +159,6 @@ Press "z" in the magit-status window
 	 the commit object, the notes are indented like the message, after an
 	 unindented line saying "Notes (<refname>):" (or "Notes:" for
 	 refs/notes/commits).
-** Cherry-picking 
-[[info:magit#Cherry%20picking][info:magit#Cherry picking]]
+
+* Keybindings
+[[info:magit#Keystroke%20Index][info:magit#Keystroke Index]]
