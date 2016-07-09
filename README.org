@@ -3,6 +3,7 @@
 [[info:magit#Top][info:magit#Top]]
 
 * Create a git repo
+[[info:magit#Repository%20setup][info:magit#Repository setup]]
 You can create a git repo with M-x magit-init. This will create a git-repo in the current directory.
 
 #+BEGIN_SRC emacs-lisp
@@ -12,6 +13,8 @@ You can create a git repo with M-x magit-init. This will create a git-repo in th
 help:magit-init
 
 * Clone a repo
+[[info:magit#Repository%20setup][info:magit#Repository setup]]
+
 M-x magit-clone
 
 This will prompt you for a repo, which is either a url, or a path, and a path to clone it to.
@@ -30,6 +33,8 @@ press "n" (next) or "p" (previous) to navigate in this window.
 help:magit-status
 
 * Stage a file
+[[info:magit#Staging%20and%20unstaging][info:magit#Staging and unstaging]]
+
 In the magit-status window, put your cursor on an unstaged file and press "s".
 
 If you press TAB on the file, it will expand to show the changes that are unstaged. Deletions show in red, and additions in green. The changes are in "hunks".
@@ -37,6 +42,10 @@ If you press TAB on the file, it will expand to show the changes that are unstag
 You can unstage a file with "u"
 
 * Commit a file
+[[info:magit#Initiating%20a%20commit][info:magit#Initiating a commit]]
+
+[[info:magit#Editing%20commit%20messages][info:magit#Editing commit messages]]
+
 In the magit-status window with some files that are staged, press "c", review the options, and probably press "c" again. Enter a commit message and type "C-c C-c" to commit it, or "C-c C-k" to cancel it.
 
 * Diffs
@@ -51,11 +60,6 @@ In the magit-status window press "l", review the options, and press "l" again.
 
 If you want to see only the commits that affected a file, in the magit-status window press "l" then "=f", enter the filename, and then press "l" again.
 
-* tag a version
-[[info:magit#Tagging][info:magit#Tagging]]
-
-press "t" in the magit-status window. You can then create a tag, annotate it, delete tags, and prune them.
-
 * Push
 [[info:magit#Pushing][info:magit#Pushing]]
 
@@ -67,63 +71,82 @@ Note that tags don't normally get pushed, but there are options ("T" to push a t
 [[info:magit#Pulling][info:magit#Pulling]]
 In the magit-status window press "F" then "p".
 
-* Fetching
+
+* Intermediate concepts
+
+** Checkout an older version of a file
+ Use M-x magit-checkout-file select the branch, or enter a revision, and then choose a file.
+
+** Revert a commit
+[[info:magit#Reverting][info:magit#Reverting]]
+
+ Got to the log, select the commit and type "V" then "V".
+** tag a version
+ [[info:magit#Tagging][info:magit#Tagging]]
+
+ press "t" in the magit-status window. You can then create a tag, annotate it, delete tags, and prune them.
+** Checkout an existing branch.
+ [[info:magit#The%20branch%20popup][info:magit#The branch popup]]
+
+ In the magit-status window press "b" then "b" and choose the branch.
+
+ To checkout a new branch, in the magit-status window press "b" then "c". Choose the branch to start from then a name for the new branch.
+
+** Merge two branches
+ [[info:magit#Merging][info:magit#Merging]]
+
+ In the magit-status window press "m", then "m" and select the branch to merge into the current one.
+
+** Fetching
 [[info:magit#Fetching][info:magit#Fetching]]
 
 In the magit-status window press "f".
 
-* Checkout an existing branch.
-[[info:magit#The%20branch%20popup][info:magit#The branch popup]]
+** Add a remote
+ [[info:magit#Remotes][info:magit#Remotes]]
 
-In the magit-status window press "b" then "b" and choose the branch.
+ M-x magit-remote-add
+ then enter an alias, and the url.
 
-To checkout a new branch, in the magit-status window press "b" then "c". Choose the branch to start from then a name for the new branch.
+** Stashing
+[[info:magit#Stashing][info:magit#Stashing]]
 
-* Merge two branches
-[[info:magit#Merging][info:magit#Merging]]
-
-In the magit-status window press "m", then "m" and select the branch to merge into the current one.
-
-* Checkout an older version of a file
-Use M-x magit-checkout-file select the branch, or enter a revision, and then choose a file.
-
-* Add a remote
-[[info:magit#Remotes][info:magit#Remotes]]
-
-M-x magit-remote-add
-then enter an alias, and the url.
-
-* Revert a commit
-Got to the log, select the commit and type "V" then "V".
-
-* Rebasing interactively
-[[info:magit#Rebasing][info:magit#Rebasing]]
-
-Open the log, select the oldest commit you want to rebase on then press "r" and then "i". Use M-p and M-n to move commits around. Press "s" on any commits you want to squash into the commit above it. C-c C-c will start the commands.
-
-From the magit-status on unpushed commits, you can also press "r" to get the rebase popup.
-
-"r w" allows you to reword the commit message.
+Press "z" in the magit-status window
 
 
-* Create patches
-[[info:magit#Creating%20and%20sending%20patches][info:magit#Creating and sending patches]]
+* Advanced concepts
+** Resetting
+[[info:magit#Resetting][info:magit#Resetting]]
 
-In magit-status window, press "W"
+** Rebasing interactively
+ [[info:magit#Rebasing][info:magit#Rebasing]]
 
-"W p" creates patches
-"W r" makes a pull request. This just creates an email with information in it.
+ Open the log, select the oldest commit you want to rebase on then press "r" and then "i". Use M-p and M-n to move commits around. Press "s" on any commits you want to squash into the commit above it. C-c C-c will start the commands.
 
-* Apply patches
-[[info:magit#Applying%20patches][info:magit#Applying patches]]
-* Notes about commits
-[[info:magit#Notes][info:magit#Notes]]
+ From the magit-status on unpushed commits, you can also press "r" to get the rebase popup.
 
-Press "T" to attach a note.
+ "r w" allows you to reword the commit message.
 
-A typical use of notes is to supplement a commit message without changing the
-	commit itself. Notes can be shown by git log along with the original
-	commit message. To distinguish these notes from the message stored in
-	the commit object, the notes are indented like the message, after an
-	unindented line saying "Notes (<refname>):" (or "Notes:" for
-	refs/notes/commits).
+** Create patches
+ [[info:magit#Creating%20and%20sending%20patches][info:magit#Creating and sending patches]]
+
+ In magit-status window, press "W"
+
+ "W p" creates patches
+ "W r" makes a pull request. This just creates an email with information in it.
+
+** Apply patches
+ [[info:magit#Applying%20patches][info:magit#Applying patches]]
+** Notes about commits
+ [[info:magit#Notes][info:magit#Notes]]
+
+ Press "T" to attach a note.
+
+ A typical use of notes is to supplement a commit message without changing the
+	 commit itself. Notes can be shown by git log along with the original
+	 commit message. To distinguish these notes from the message stored in
+	 the commit object, the notes are indented like the message, after an
+	 unindented line saying "Notes (<refname>):" (or "Notes:" for
+	 refs/notes/commits).
+** Cherry-picking 
+[[info:magit#Cherry%20picking][info:magit#Cherry picking]]
