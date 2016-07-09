@@ -14,3 +14,8 @@ You can create a git repo with M-x magit-init
 #+RESULTS:
 
 * Stage a file
+In the magit-status window, put your cursor on an unstaged file and press "s".
+
+* Commit a file
+In the magit-status window with some files that are staged, press "c", review the options, and probably press "c" again. Enter a commit message and type "C-c C-c" to commit it, or "C-c C-k" to cancel it.
+
