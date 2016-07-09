@@ -77,6 +77,9 @@ In the magit-status window, type "!" to get the popup and choose what you want t
 
 * Check the output of the git command
 Press "$"
+
+* Keybindings
+[[info:magit#Keystroke%20Index][info:magit#Keystroke Index]]
 * Intermediate concepts
 ** Git blame
 ** Checkout an older version of a file
@@ -117,7 +120,6 @@ In the magit-status window press "f".
 [[info:magit#Stashing][info:magit#Stashing]]
 
 Press "z" in the magit-status window
-
 * Advanced concepts
 ** Resetting
 [[info:magit#Resetting][info:magit#Resetting]]
@@ -157,16 +159,7 @@ Press "A"
 	 the commit object, the notes are indented like the message, after an
 	 unindented line saying "Notes (<refname>):" (or "Notes:" for
 	 refs/notes/commits).
-<<<<<<< HEAD
 
-* Keybindings
-[[info:magit#Keystroke%20Index][info:magit#Keystroke Index]]
-||||||| merged common ancestors
 ** Cherry-picking 
 [[info:magit#Cherry%20picking][info:magit#Cherry picking]]
-=======
-** Cherry-picking 
-[[info:magit#Cherry%20picking][info:magit#Cherry picking]]
-* Keybindings
-[[info:magit#Keystroke%20Index][info:magit#Keystroke Index]]
->>>>>>> origin/master
+
