@@ -112,3 +112,14 @@ In magit-status window, press "W"
 
 * Apply patches
 [[info:magit#Applying%20patches][info:magit#Applying patches]]
+* Notes about commits
+[[info:magit#Notes][info:magit#Notes]]
+
+Press "T" to attach a note.
+
+A typical use of notes is to supplement a commit message without changing the
+	commit itself. Notes can be shown by git log along with the original
+	commit message. To distinguish these notes from the message stored in
+	the commit object, the notes are indented like the message, after an
+	unindented line saying "Notes (<refname>):" (or "Notes:" for
+	refs/notes/commits).
