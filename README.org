@@ -22,5 +22,5 @@ In the magit-status window with some files that are staged, press "c", review th
 * See the log
 In the magit-status window press "l", review the options, and press "l" again.
 
-* Checkout a branch
-In the magit-status window press "b".
+* Checkout a new branch
+In the magit-status window press "b" then "c". Choose the branch to start from then a name for the new branch.
