@@ -46,29 +46,39 @@ In the magit-status window press "l", review the options, and press "l" again.
 If you want to see only the commits that affected a file, in the magit-status window press "l" then "=f", enter the filename, and then press "l" again.
 
 * Push
+[[info:magit#Pushing][info:magit#Pushing]]
+
 In the magit-status window press "P" then "p".
 
 Note that tags don't normally get pushed, but there are options ("T" to push a tag, and "t" to push all tags).
 
 * Pull
-In the magit-status window press "f" then "p".
+[[info:magit#Pulling][info:magit#Pulling]]
+In the magit-status window press "F" then "p".
 
-* Checkout a branch
-In the magit-status window press "b".
+* Fetching
+[[info:magit#Fetching][info:magit#Fetching]]
+
+In the magit-status window press "f".
 
 * Checkout an existing branch.
+[[info:magit#The%20branch%20popup][info:magit#The branch popup]]
+
 In the magit-status window press "b" then "b" and choose the branch.
 
-* Checkout a new branch
-In the magit-status window press "b" then "c". Choose the branch to start from then a name for the new branch.
+To checkout a new branch, in the magit-status window press "b" then "c". Choose the branch to start from then a name for the new branch.
 
 * Merge two branches
+[[info:magit#Merging][info:magit#Merging]]
+
 In the magit-status window press "m", then "m" and select the branch to merge into the current one.
 
 * Checkout an older version of a file
 Use M-x magit-checkout-file select the branch, or enter a revision, and then choose a file.
 
 * Add a remote
+[[info:magit#Remotes][info:magit#Remotes]]
+
 M-x magit-remote-add
 then enter an alias, and the url.
 
