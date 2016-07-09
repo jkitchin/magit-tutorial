@@ -24,3 +24,8 @@ In the magit-status window press "l", review the options, and press "l" again.
 
 * Checkout a branch
 In the magit-status window press "b".
+
+* Checkout an existing branch.
+In the magit-status window press "b" then "b" and choose the branch.
+
+* Merge two branches.
