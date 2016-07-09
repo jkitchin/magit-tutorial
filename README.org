@@ -33,3 +33,6 @@ In the magit-status window press "b" then "c". Choose the branch to start from t
 
 * Merge two brnches
 In the magit-status window press "m", then "m" and select the branch to merge into the current one.
+
+* Checkout an older version of a file
+Use M-x magit-checkout-file select the branch, or enter a revision, and then choose a file.
