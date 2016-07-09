@@ -28,6 +28,11 @@ In the magit-status window press "l", review the options, and press "l" again.
 
 If you want to see only the commits that affected a file, in the magit-status window press "l" then "=f", enter the filename, and then press "l" again.
 
+* Push
+In the magit-status window press "P" then "p".
+
+Note that tags don't normally get pushed, but there are options ("T" to push a tag, and "t" to push all tags).
+
 * Checkout a branch
 In the magit-status window press "b".
 
