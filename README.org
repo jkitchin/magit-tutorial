@@ -25,10 +25,14 @@ Press g in the window to refresh it.
 
 press "n" (next) or "p" (previous) to navigate in this window.
 
+help:magit-status
+
 * Stage a file
 In the magit-status window, put your cursor on an unstaged file and press "s".
 
 If you press TAB on the file, it will expand to show the changes that are unstaged. Deletions show in red, and additions in green. The changes are in "hunks".
+
+You can unstage a file with "u"
 
 * Commit a file
 In the magit-status window with some files that are staged, press "c", review the options, and probably press "c" again. Enter a commit message and type "C-c C-c" to commit it, or "C-c C-k" to cancel it.
