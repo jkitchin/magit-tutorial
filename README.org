@@ -82,7 +82,6 @@
 ** Keybindings
  [[info:magit#Keystroke%20Index][info:magit#Keystroke Index]]
 * Intermediate concepts
-** Git blame
 ** Checkout an older version of a file
  Use M-x magit-checkout-file select the branch, or enter a revision, and then choose a file.
 
@@ -95,7 +94,7 @@ help:magit-find-file-other-window
 [[info:magit#Reverting][info:magit#Reverting]]
 
  Got to the log, select the commit and type "V" then "V".
-** tag a version
+** Tag a version
  [[info:magit#Tagging][info:magit#Tagging]]
 
  press "t" in the magit-status window. You can then create a tag, annotate it, delete tags, and prune them.
@@ -126,17 +125,20 @@ In the magit-status window press "f".
 [[info:magit#Stashing][info:magit#Stashing]]
 
 Press "z" in the magit-status window
+** Git blame
 * Advanced concepts
 ** Resetting
 [[info:magit#Resetting][info:magit#Resetting]]
 
-** Rebasing interactively
+** Rebasing 
  [[info:magit#Rebasing][info:magit#Rebasing]]
 
+*** Interactve rebasing
  Open the log, select the oldest commit you want to rebase on then press "r" and then "i". Use M-p and M-n to move commits around. Press "s" on any commits you want to squash into the commit above it. C-c C-c will start the commands.
 
  From the magit-status on unpushed commits, you can also press "r" to get the rebase popup.
 
+*** Reword a commit message
  "r w" allows you to reword the commit message.
 
 ** Create patches
