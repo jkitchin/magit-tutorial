@@ -1,0 +1,16 @@
+* Create a git repo
+You can create a git repo with M-x magit-init
+
+#+BEGIN_SRC emacs-lisp
+(magit-init)
+#+END_SRC
+
+* Check the status of your repo
+
+#+BEGIN_SRC emacs-lisp
+(magit-status)
+#+END_SRC
+
+#+RESULTS:
+
+* Stage a file
