@@ -21,3 +21,6 @@ In the magit-status window with some files that are staged, press "c", review th
 
 * See the log
 In the magit-status window press "l", review the options, and press "l" again.
+
+* Checkout a branch
+In the magit-status window press "b".
