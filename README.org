@@ -53,3 +53,5 @@ In the magit-status window press "f" then "p".
 Got to the log, select the commit and type "V"
 
 "bad commit"
+
+
