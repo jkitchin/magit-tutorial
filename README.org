@@ -20,6 +20,9 @@ If you press TAB on the file, it will expand to show the changes that are unstag
 * Commit a file
 In the magit-status window with some files that are staged, press "c", review the options, and probably press "c" again. Enter a commit message and type "C-c C-c" to commit it, or "C-c C-k" to cancel it.
 
+* Diffs
+From the magit-status window, with the cursor on some file, press "d" then "d"
+
 * See the log
 In the magit-status window press "l", review the options, and press "l" again.
 
