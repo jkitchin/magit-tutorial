@@ -1,9 +1,22 @@
+#+TITLE: Magit tutorial
+
+[[info:magit#Top][info:magit#Top]]
+
 * Create a git repo
-You can create a git repo with M-x magit-init
+You can create a git repo with M-x magit-init. This will create a git-repo in the current directory.
 
 #+BEGIN_SRC emacs-lisp
 (magit-init)
 #+END_SRC
+
+help:magit-init
+
+* Clone a repo
+M-x magit-clone
+
+This will prompt you for a repo, which is either a url, or a path, and a path to clone it to.
+
+help:magit-clone
 
 * Check the status of your repo
 Run M-x magit-status to see the status of your repo.
