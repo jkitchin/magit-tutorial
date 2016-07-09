@@ -2,88 +2,94 @@
 
 [[info:magit#Top][info:magit#Top]]
 
-* Create a git repo
-[[info:magit#Repository%20setup][info:magit#Repository setup]]
-You can create a git repo with M-x magit-init. This will create a git-repo in the current directory.
+* Basic magit
+** Create a git repo
+ [[info:magit#Repository%20setup][info:magit#Repository setup]]
+ You can create a git repo with M-x magit-init. This will create a git-repo in the current directory.
 
-#+BEGIN_SRC emacs-lisp
+ #+BEGIN_SRC emacs-lisp
 (magit-init)
-#+END_SRC
+ #+END_SRC
 
-help:magit-init
+ help:magit-init
 
-* Clone a repo
-[[info:magit#Repository%20setup][info:magit#Repository setup]]
+** Clone a repo
+ [[info:magit#Repository%20setup][info:magit#Repository setup]]
 
-M-x magit-clone
+ M-x magit-clone
 
-This will prompt you for a repo, which is either a url, or a path, and a path to clone it to.
+ This will prompt you for a repo, which is either a url, or a path, and a path to clone it to.
 
-help:magit-clone
+ help:magit-clone
 
-* Check the status of your repo
-[[info:magit#Status%20buffer][info:magit#Status buffer]]
+** Check the status of your repo
+ [[info:magit#Status%20buffer][info:magit#Status buffer]]
 
-Run M-x magit-status to see the status of your repo.
+ Run M-x magit-status to see the status of your repo.
 
-Press "g" in the window to refresh it.
+ Press "g" in the window to refresh it.
 
-press "n" (next) or "p" (previous) to navigate in this window.
+ press "n" (next) or "p" (previous) to navigate in this window.
 
-help:magit-status
+ help:magit-status
 
-* Stage a file
-[[info:magit#Staging%20and%20unstaging][info:magit#Staging and unstaging]]
+** Stage a file
+ [[info:magit#Staging%20and%20unstaging][info:magit#Staging and unstaging]]
 
-In the magit-status window, put your cursor on an unstaged file and press "s".
+ In the magit-status window, put your cursor on an unstaged file and press "s".
 
-If you press TAB on the file, it will expand to show the changes that are unstaged. Deletions show in red, and additions in green. The changes are in "hunks".
+ If you press TAB on the file, it will expand to show the changes that are unstaged. Deletions show in red, and additions in green. The changes are in "hunks".
 
-You can unstage a file with "u"
+ You can unstage a file with "u"
 
-* Commit a file
-[[info:magit#Initiating%20a%20commit][info:magit#Initiating a commit]]
+** Commit a file
+ [[info:magit#Initiating%20a%20commit][info:magit#Initiating a commit]]
 
-[[info:magit#Editing%20commit%20messages][info:magit#Editing commit messages]]
+ [[info:magit#Editing%20commit%20messages][info:magit#Editing commit messages]]
 
-In the magit-status window with some files that are staged, press "c", review the options, and probably press "c" again. Enter a commit message and type "C-c C-c" to commit it, or "C-c C-k" to cancel it.
+ In the magit-status window with some files that are staged, press "c", review the options, and probably press "c" again. Enter a commit message and type "C-c C-c" to commit it, or "C-c C-k" to cancel it.
 
-* Diffs
-[[info:magit#Diffing][info:magit#Diffing]]
+** Diffs
+ [[info:magit#Diffing][info:magit#Diffing]]
 
-From the magit-status window, press "d" then "d" to see what has changed.
+ From the magit-status window, press "d" then "d" to see what has changed.
 
-* See the log
-[[info:magit#Logging][info:magit#Logging]]
+** See the log
+ [[info:magit#Logging][info:magit#Logging]]
 
-In the magit-status window press "l", review the options, and press "l" again.
+ In the magit-status window press "l", review the options, and press "l" again.
 
-If you want to see only the commits that affected a file, in the magit-status window press "l" then "=f", enter the filename, and then press "l" again.
+ If you want to see only the commits that affected a file, in the magit-status window press "l" then "=f", enter the filename, and then press "l" again.
 
-* Push
-[[info:magit#Pushing][info:magit#Pushing]]
+** Push
+ [[info:magit#Pushing][info:magit#Pushing]]
 
-In the magit-status window press "P" then "p".
+ In the magit-status window press "P" then "p".
 
-Note that tags don't normally get pushed, but there are options ("T" to push a tag, and "t" to push all tags).
+ Note that tags don't normally get pushed, but there are options ("T" to push a tag, and "t" to push all tags).
 
-* Pull
-[[info:magit#Pulling][info:magit#Pulling]]
-In the magit-status window press "F" then "p".
+** Pull
+ [[info:magit#Pulling][info:magit#Pulling]]
+ In the magit-status window press "F" then "p".
 
-* Run a command-line git command manually
-[[info:magit#Running%20Git%20manually][info:magit#Running Git manually]]
-In the magit-status window, type "!" to get the popup and choose what you want to do (e.g. where to run the command, etc... You do not need to type "git" in the command. Note you can also run a shell command from this interface.
+** Run a command-line git command manually
+ [[info:magit#Running%20Git%20manually][info:magit#Running Git manually]]
+ In the magit-status window, type "!" to get the popup and choose what you want to do (e.g. where to run the command, etc... You do not need to type "git" in the command. Note you can also run a shell command from this interface.
 
-* Check the output of the git command
-Press "$"
+** Check the output of the git command
+ Press "$"
 
-* Keybindings
-[[info:magit#Keystroke%20Index][info:magit#Keystroke Index]]
+** Keybindings
+ [[info:magit#Keystroke%20Index][info:magit#Keystroke Index]]
 * Intermediate concepts
 ** Git blame
 ** Checkout an older version of a file
  Use M-x magit-checkout-file select the branch, or enter a revision, and then choose a file.
+
+help:magit-checkout-file 
+
+help:magit-find-file
+help:magit-find-file-other-window
 
 ** Revert a commit
 [[info:magit#Reverting][info:magit#Reverting]]
