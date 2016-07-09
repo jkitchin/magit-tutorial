@@ -76,5 +76,18 @@ then enter an alias, and the url.
 Got to the log, select the commit and type "V" then "V".
 
 * Rebasing interactively
+[[info:magit#Rebasing][info:magit#Rebasing]]
 
 Open the log, select the oldest commit you want to rebase on then press "r" and then "i". Use M-p and M-n to move commits around. Press "s" on any commits you want to squash into the commit above it. C-c C-c will start the commands.
+
+
+* Create patches
+[[info:magit#Creating%20and%20sending%20patches][info:magit#Creating and sending patches]]
+
+In magit-status window, press "W"
+
+"W p" creates patches
+"W r" makes a pull request. This just creates an email with information in it.
+
+* Apply patches
+[[info:magit#Applying%20patches][info:magit#Applying patches]]
