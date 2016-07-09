@@ -33,6 +33,9 @@ In the magit-status window press "P" then "p".
 
 Note that tags don't normally get pushed, but there are options ("T" to push a tag, and "t" to push all tags).
 
+* Pull
+In the magit-status window press "f" then "p".
+
 * Checkout a branch
 In the magit-status window press "b".
 
