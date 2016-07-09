@@ -50,8 +50,5 @@ In the magit-status window press "P" then "p".
 In the magit-status window press "f" then "p".
 
 * Revert a commit
-Got to the log, select the commit and type "V"
-
-"bad commit"
-
+Got to the log, select the commit and type "V" then "V".
 
