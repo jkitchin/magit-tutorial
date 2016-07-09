@@ -42,3 +42,7 @@ M-x magit-remote-add
 then enter an alias, and the url.
 
 * Push
+In the magit-status window press "P" then "p".
+
+* Pull
+In the magit-status window press "F" then "p".
