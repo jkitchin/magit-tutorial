@@ -90,6 +90,8 @@ help:magit-checkout-file
 help:magit-find-file
 help:magit-find-file-other-window
 
+** Search the commit messages for a pattern
+In a magit-status window press "l =g" enter a pattern to grep for, and then press "l".
 ** Revert a commit
 [[info:magit#Reverting][info:magit#Reverting]]
 
