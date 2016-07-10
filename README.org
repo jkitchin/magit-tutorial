@@ -114,6 +114,7 @@ help:magit-find-file-other-window
 
 You will probably also want to get familiar with [[info:ediff#Top][info:ediff#Top]].
 
+On a file in a magit-status window, press "e" to enter the 3-window ediff view. The A window is the version at HEAD, the B window is what is in the index, and the C window is the current version.
 
 ** Fetching
 [[info:magit#Fetching][info:magit#Fetching]]
