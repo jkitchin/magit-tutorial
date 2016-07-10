@@ -109,6 +109,11 @@ help:magit-find-file-other-window
  [[info:magit#Merging][info:magit#Merging]]
 
  In the magit-status window press "m", then "m" and select the branch to merge into the current one.
+** Resolving conflicts
+[[info:magit#Resolving%20conflicts][info:magit#Resolving conflicts]]
+
+You will probably also want to get familiar with [[info:ediff#Top][info:ediff#Top]].
+
 
 ** Fetching
 [[info:magit#Fetching][info:magit#Fetching]]
