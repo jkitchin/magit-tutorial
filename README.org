@@ -111,7 +111,7 @@ In a magit-status window press "l =g" enter a pattern to grep for, and then pres
  [[info:magit#Merging][info:magit#Merging]]
 
  In the magit-status window press "m", then "m" and select the branch to merge into the current one.
-** Resolving conflicts
+** TODO Resolving conflicts
 [[info:magit#Resolving%20conflicts][info:magit#Resolving conflicts]]
 
 You will probably also want to get familiar with [[info:ediff#Top][info:ediff#Top]].
